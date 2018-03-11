@@ -23,7 +23,7 @@ p
   color: darken($main_color, 10%)
   a
     text-decoration: none
-    hover
+    &:hover
       color: lighten($main_color, 20%)
 ```
 Le Sass s’embarrasse du moins de chose possible... Donc ici, pas d'accolades, pas de point virgule, ce sont les tabulations et les retours à la ligne qui permettent de structurer notre code.
@@ -44,7 +44,7 @@ p {
   a {
     text-decoration: none;
 
-    hover {
+    &:hover {
       color: lighten($main_color, 20%);
     }
   }
@@ -68,7 +68,7 @@ p {
   a {
     text-decoration: none;
 
-    hover {
+    &:hover {
       color: lighten(@main_color, 20%);
     }
   }
@@ -88,7 +88,7 @@ p {
 p a {
   text-decoration: none;
 }
-p a hover {
+p a:hover {
   color: #8ddae2;
 }
 ```
